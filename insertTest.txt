@@ -1,0 +1,10 @@
+insert 0	DNA	PIZZA
+insert	1		RNA	GGGCCCTTAA
+insert	2	RNA	GGGCCC
+insert 3	DNA	AGCTUAAAA
+insert		4	DNA ACGTCATTATAGGGCCC
+insert 5	RNA UACGUUUAAA
+insert 27	DNA	ACTCATGAT
+insert	6 DNA	
+insert -1 RNA GGGGGGGG
+print

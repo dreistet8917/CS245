@@ -1,5 +1,3 @@
-package BST;
-//package lab04;
 
 public class Node<E> {
 	private E element;

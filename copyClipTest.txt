@@ -1,0 +1,30 @@
+insert	0 RNA	AUGCAUUGCC
+insert	1 RNA	AAAUUUCCCGGG
+insert	4	DNA 	GACCAGCATTAC
+
+insert	6	DNA	TATATA
+print
+copy	5		0
+copy	0	5
+print
+
+clip	5	3	5
+print
+clip	0	3
+print 
+insert 0	RNA	AUGCAUUGCC
+print 0
+clip	0	-1	
+insert 0	RNA	AUGCAUUGCC
+print 0
+
+clip	0	10	12
+insert 0	RNA	AUGCAUUGCC
+print 0
+clip	0	6	12
+print 0
+insert 0	RNA	AUGCAUUGCC
+print 0
+clip	0	6	3
+print 0
+

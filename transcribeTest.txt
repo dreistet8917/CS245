@@ -1,0 +1,12 @@
+insert	0 RNA	AUGCAUUGCC
+insert	1 RNA	AAAUUUCCCGGG
+insert	4	DNA 	GACCAGCATTAC
+
+insert	6	DNA	TATATA
+print
+
+transcribe	0
+transcribe	5
+transcribe	4
+transcribe	6
+print

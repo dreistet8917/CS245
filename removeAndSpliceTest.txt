@@ -1,0 +1,18 @@
+insert 	1	RNA	CCUGGAA
+insert	0	DNA	AGGGGGACCCCCTTTT
+insert	5	DNA	AGCT
+insert 4	RNA UGAUGAGGGGG
+insert 2 RNA GCUUAGGAUUUU
+print
+remove	2
+print
+remove 2
+splice	0	DNA	GCGC	6
+print	0
+splice	1	RNA	HAPPY	4
+print 1
+splice	5	RNA	GCA		4
+splice	5	DNA	GCA		4
+print 5
+splice		2	DNA	CCCCCCC	5
+print

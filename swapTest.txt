@@ -1,0 +1,19 @@
+insert	0 DNA	AGGATTTCCCC
+insert	1 RNA	AAAUUUCCCGGG
+insert	4	DNA 	GACCAGCATTAC
+insert	5	DNA 	AACTAGAAGTGA
+insert	6	DNA	TATATA
+print
+swap	1	3	3	0
+print 0
+print	3
+
+swap	5	3	1	3
+print 1
+print	5
+swap	6	6	4	15
+print 			 4
+print	6
+swap	6	6	4	8
+print 4
+print	6

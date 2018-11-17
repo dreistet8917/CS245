@@ -1,0 +1,15 @@
+insert 	1	RNA	CCUGGAA
+insert	0	DNA	AGGGGGACCCCCTTTT
+insert	5	DNA	T
+insert 4	DNA	TG
+
+insert 2 	DNA	TTATATGGGGCA
+insert	6 	RNA	AAGGUCC
+insert   3 	DNA	GGCACGAAT
+print
+overlap	0 1
+overlap 4	5
+overlap	5 4
+overlap 2 3
+overlap 1 6
+
