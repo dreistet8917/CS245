@@ -1,3 +1,4 @@
+package lab08;
 
 public class Node<E> {
 	private E element;

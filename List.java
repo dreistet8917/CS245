@@ -1,3 +1,4 @@
+package lab08;
 
 /** List ADT */
 public interface List<E> {
@@ -55,4 +56,3 @@ public interface List<E> {
    
    
 }
-

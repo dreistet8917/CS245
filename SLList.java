@@ -1,3 +1,4 @@
+package lab08;
 
 public class SLList<E> implements List<E> {
 	private Node<E> head;
@@ -14,12 +15,14 @@ public class SLList<E> implements List<E> {
 		size = 0;
 	}
 
+	@Override
 	public void clear() {
 		// TODO Auto-generated method stub
 		head = null;
 		size = 0;
 	}
 
+	@Override
 	public void insert(int index, E item) {
 		// TODO Auto-generated method stub
 		if (index < 0 || index > size) {
@@ -55,11 +58,13 @@ public class SLList<E> implements List<E> {
 		size++;
 	}
 
-	public void add(E c) {
+	@Override
+	public void add(E item) {
 		// TODO Auto-generated method stub
-		insert(size, c);
+		insert(size, item);
 	}
 
+	@Override
 	public void remove(int index) {
 		// TODO Auto-generated method stub
 		if (index == 0) {
@@ -86,6 +91,7 @@ public class SLList<E> implements List<E> {
 		}
 	}
 
+	@Override
 	public E prev(int index) {
 		// TODO Auto-generated method stub
 		if (index < 0 || index > size) {
@@ -99,6 +105,7 @@ public class SLList<E> implements List<E> {
 
 	}
 
+	@Override
 	public E next(int index) {
 		// TODO Auto-generated method stub
 		if (index < 0 || index > size) {
@@ -111,11 +118,13 @@ public class SLList<E> implements List<E> {
 		return getNode(index + 1).getElement();
 	}
 
+	@Override
 	public int length() {
 		// TODO Auto-generated method stub
 		return size;
 	}
 
+	@Override
 	public void reverse() {
 		// TODO Auto-generated method stub
 		Node<E> node = (Node<E>) head;
@@ -136,9 +145,10 @@ public class SLList<E> implements List<E> {
 		head = prev;
 	}
 
+	@Override
 	public E getValue(int index) {
 		// TODO Auto-generated method stub
-		if (index < 0 || index > size) {
+		if (index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException(Integer.toString(index));
 		}
 
@@ -153,9 +163,8 @@ public class SLList<E> implements List<E> {
 		if (list.getHead() != null) {
 			Node<E> n = getNode(index);
 			Node<E> temp = n.getNext();
-			Node<E> last = list.getLast();
 			n.setNext(list.getHead());
-			last.setNext(temp);
+			list.getLast().setNext(temp);
 			size += list.length();
 		}
 	}
@@ -181,19 +190,4 @@ public class SLList<E> implements List<E> {
 		return result;
 	}
 
-	public String toStringNA() {
-		Node<E> nodeRef = head;
-		String result = "";
-		while (nodeRef != null) {
-			result = result + nodeRef.getElement().toString();
-			if (nodeRef.getNext() != null) {
-				result = result;
-			}
-			nodeRef = nodeRef.getNext();
-		}
-		return result;
-	}
-
-
 }
-
